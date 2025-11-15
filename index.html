@@ -10,7 +10,7 @@
 <body class="d-flex flex-column h-100">
     <header>
         <div class="container-fluid bg-body-tertiary">
-            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
                 <div class="col-md-3 mb-2 mb-md-0">
                     <a href="./index.html" class="d-inline-flex link-body-emphasis text-decoration-none align-items-center">
                         <span class="bi bi-pen me-2 text-primary fs-1"></span>
@@ -25,28 +25,30 @@
     </header>
 
     <main>
-        <div class="container p-5 border rounded bg-body-tertiary mb-4">
+        <div class="container p-5 mt-4 mb-4 justify-content-center">
             <div class="container text-center mb-3">
-                <h1 class="text-center">Poemas</h1>
+                <h1 class="display-5 text-center text-primary fw-bold">Poemas</h1>
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
                 <div class="col">
-                    <div class="card">
-                        <img src="./assets/img/1.jpg" class="img-fluid rounded">
+                    <div class="card border-primary shadow">
+                        <img src="./assets/img/1.jpg" class="img-fluid rounded-top">
                         <div class="card-body">
                             <h2 class="card-title">Ó vida cruel, vazio sentido</h2>
 
-                            <button type="button" class="col-12 btn btn-primary" data-bs-toggle="modal" data-bs-target="#poema1">Ler</button>
+                            <button type="button" class="col-12 btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#poema1">
+                                <i class="bi bi-book-fill me-2"></i>Ler
+                            </button>
 
                             <div class="modal fade" id="poema1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                    <div class="modal-content">
+                                    <div class="modal-content border-primary">
                                         <div class="modal-header">
                                             <div>
                                                 <h1 class="modal-title mb-0">Ó vida cruel, vazio sentido</h1>
-                                                <small class="text-muted fst-italic">— Samuel</small>
+                                                <small class="fst-italic">— Samuel</small>
                                             </div>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                                         </div>
 
                                         <div class="modal-body fst-italic">
@@ -54,13 +56,13 @@
                                             <p class="mb-1">qual é, afinal, nosso objetivo?</p>
                                             <p class="mb-3">Por que seguimos vivos, tão perdidos?</p>
 
-                                            <p class="mb-1">Ouça o que Ele disse: “Façamos o homem à nossa imagem”.</p>
+                                            <p class="mb-1">Ouça o que Ele disse: "Façamos o homem à nossa imagem".</p>
                                             <p class="mb-1">Do pó soprado às narinas brotou minha vida;</p>
                                             <p class="mb-1">da desobediência ergueu-se Sua ira;</p>
                                             <p class="mb-1">da obediência do Filho veio a salvação;</p>
                                             <p class="mb-3">da minha obediência fluiu minha remissão.</p>
 
-                                            <p class="mb-1">Ouça o que Ele disse: “Faço novos céus e nova terra”.</p>
+                                            <p class="mb-1">Ouça o que Ele disse: "Faço novos céus e nova terra".</p>
                                             <p class="mb-1">Então minha vida será plena em satisfação;</p>
                                             <p class="mb-1">da minha ruína brotará exultação;</p>
                                             <p class="mb-1">meu pecado se fará cândido como a neve,</p>
@@ -68,7 +70,9 @@
                                         </div>
 
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                                            <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">
+                                                <i class="bi bi-x-circle me-2"></i>Fechar
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -79,6 +83,7 @@
             </div>
         </div>
     </main>
+
     <footer class="footer mt-auto py-3 bg-body-tertiary text-center">
 	    <div class="container">
             <span class="text-body-secondary">&COPY; Spoem 2025 — Todos os direitos reservados</span>
